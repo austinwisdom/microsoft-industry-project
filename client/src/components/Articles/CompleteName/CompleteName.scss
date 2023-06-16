@@ -1,5 +1,5 @@
 .complete-name{
-    
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -12,6 +12,7 @@
         display: flex;
     }
     &__avatar-change{
+        margin-top: 2rem;
         max-width: 20rem;
         margin-left: 2rem;
         text-align: left;
@@ -28,15 +29,23 @@
     &__avatar-btn{
     background-color: white;
     padding: 0.5rem 1.5rem;
-    border: 1px solid rgb(168, 167, 167);;
+    border: 1px solid rgb(168, 167, 167);
+    margin-top: 0.75rem;
 
     }
     &__bottom{
-       
+
         margin: 1rem;
         margin-bottom: 0;
         border-top: 1px solid rgb(212, 211, 211);
         display: flex;
         justify-content: space-between;
+        &--name{
+            font-weight: 600
+
+        };
+        &--edit{
+            color: rgba(65, 141, 209, 1);
+        }
     }
 }

@@ -1,8 +1,9 @@
 import "./UserPage.scss";
 import CompleteName from "../../components/Articles/CompleteName/CompleteName";
-import AccountInformation from "../../components/Articles/AccountInformation/AccountInformation"
+import AccountInformation from "../../components/Articles/AccountInformation/AccountInformation";
+import DataServices from "../../components/Articles/DataServices/DataServices";
+
 // import CompleteName from "../components/Articles/CompleteName/CompleteName";
-// import DataServices from "../components/Articles/DataServices/DataServices";
 // import LanguageInformation from "../components/Articles/LanguageInformation/LanguageInformation";
 // import ProfileInformation from "../components/Articles/ProfileInformation/ProfileInformation";
 // import YourProfiles from "../components/Articles/YourProfiles/YourProfiles";
@@ -12,8 +13,8 @@ const UserPage = () => {
   <div className="user-page">
     <AccountInformation />
     <CompleteName />
-    {/* <DataServices />
-    <LanguageInformation />
+    <DataServices />
+    {/* <LanguageInformation />
     <ProfileInformation />
     <YourProfiles /> */}
     </div>

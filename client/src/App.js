@@ -8,6 +8,7 @@ import MainPage from "./pages/MainPage/MainPage";
 import UserPage from "./pages/UserPage/UserPage";
 import ProfilesPage from "./pages/ProfilesPage/ProfilesPage";
 import JorgePage from "./pages/JorgePage/JorgePage";
+import AnniePage from "./pages/AnniePage/AnniePage";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/user" element={<UserPage />} />
           <Route path="/profiles" element={<ProfilesPage />} />
           <Route path="/profiles/jorge" element={<JorgePage />}></Route>
+          <Route path="/profiles/annie" element={<AnniePage />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

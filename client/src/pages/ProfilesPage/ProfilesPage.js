@@ -6,6 +6,7 @@ import "./ProfilesPage.scss";
 import chartImage from "../../assets/images/graph@3x.png";
 import profilePic from "../../assets/Ellipse 3.png"
 import alertIcon from "../../assets/icons/red-alert.svg"
+import graph from "../../assets/RoughGraph.png"
 
 const ProfilesPage = () => {
   const navigate = useNavigate();
@@ -59,18 +60,21 @@ const ProfilesPage = () => {
       </article>
       <article className="article__main">
         <img className="article__main__image" src={profilePic} />
-        <p className="article__main__name">Welcome back Jorge! Here are some details about how your data is being used.</p>
+        <p className="article__main__name">Welcome back Andrew! Here are some details about how your data is being used.</p>
         <div className="article__main__info">
           {/* <p className="article__main__info__location">{profilesData[0].location}</p> */}
           {/* <p className="article__main__info__age">{profilesData[0].age}</p> */}
           <p className="article__main__info__occupation">
             {/* {profilesData[0].occupation} */}
+            <h1>Risk level:</h1>
+            <h2 className="low">Low</h2>
+            There are currently no risks to your privacy
           </p>
         </div>
         <div className="article__main__chart">
-          <img src={chartImage} className="article__main__chart__image"/>
-          <h3 className="article__main__chart__title">Chart Title</h3>
-          <p className="article__main__chart__detail">Chart Details</p>
+          <img src={graph} className="article__main__chart__image"/>
+          <h3 className="article__main__chart__title">Your data has been sold recently</h3>
+          <p className="article__main__chart__detail"></p>
         </div>
 
       </article>

@@ -9,7 +9,7 @@ import CompleteName from "../../components/Articles/CompleteName/CompleteName";
 
 const UserPage = () => {
   return (
-  <div>
+  <div className="user-page">
     {/* <AccountInformation /> */}
     <CompleteName />
     {/* <DataServices />

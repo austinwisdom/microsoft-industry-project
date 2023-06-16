@@ -1,10 +1,12 @@
 import "./CompleteName.scss";
-
+import avatar from "../../../assets/Ellipse 3.png"
 const CompleteName = () => {
   return (
     <section className="complete-name">
       <div className="complete-name__main">
-        <div className="complete-name__avatar"></div>
+        <div className="complete-name__avatar">
+          <img src={avatar}/>
+        </div>
         <div className="complete-name__avatar-change">
           <p>Personalize your account with a picture. Your profile 
           picture will appear in the applications and devices that use

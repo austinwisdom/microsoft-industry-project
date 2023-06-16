@@ -11,10 +11,10 @@ const Header = () => {
             <nav className="nav">
                 <div className="nav__div--main">
                     <div className="nav__div--logo">
-                    <img src="" />
-                    <NavLink><h3 className="nav__div--link">Microsoft Account |</h3></NavLink>
-                    <NavLink><h4>Your Information</h4></NavLink>
-                </div>
+                        <img src="" />
+                        <NavLink><h3 className="nav__div--link">Microsoft Account |</h3></NavLink>
+                        <NavLink><h4>Your Information</h4></NavLink>
+                    </div>
                 <div className="nav__div--navbar">
                     <ul className="nav__ul">
                         <NavLink><li>Privacy</li></NavLink>

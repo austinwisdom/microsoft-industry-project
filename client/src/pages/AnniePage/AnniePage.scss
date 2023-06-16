@@ -1,24 +1,61 @@
-.profiles-page {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 70%;
-    margin: 10%;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+.article__side__button--active {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.alert-icon {
+  margin-left: 1rem;
+  width: 2rem;
+  height: auto;
+}
+
+.annie-page__article__main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   
-  .article__main {
+  width: 60rem;
+  height: 60rem;
+  background-color: #fff;
+  // margin-top: 2rem;
+  margin-left: 5rem;
+  &__name {
+    width: 10vw;
+    height: auto;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: .5rem;
+    color:#213555;
+    font-weight: 600;
+  }
+  &__image {
+    width: 10vw;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 18rem .5rem 1rem .5rem;
+    
+  }
+  &__map {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 60rem;
-    height: 20rem;
-    background-color: #fff;
-    margin: 5rem 2rem;
-    &__name {
-      width: 10vw;
+    
+    width:42%;
+    height: 15rem;
+    border: 1px solid #213555;
+    border-radius: 5px;
+    margin-top: 18rem;
+    margin-left: .3rem;
+    &__detail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
       height: auto;
       padding: .5rem;
       border: 1px solid #ccc;
@@ -28,106 +65,6 @@
       color:#213555;
       font-weight: 600;
     }
-    &__image {
-      width: 10vw;
-      height: auto;
-      border: 1px solid #ccc;
-      border-radius: 50%;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin: .5rem;
-    }
-    &__info {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      height: 7rem;
-      width: 10rem;
-      color:#213555;
-      font-weight: 600;
-      &__location {
-        height: .7rem;
-        margin-right: .5rem;
-      }
-      &__age {
-        height: .7rem;
-      }
-      &__occupation {
-        height: 1rem;
-        
-      }
-    }
-    &__chart {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color:#213555;
-      font-weight: 600;
-      &__image {
-        height: 10rem;
-        width: 10rem;
-      }
-      &__title {
-        height: 2rem;
-        
-      }
-      &__detail {
-        height: 2rem;
-      }
-    }
   }
-  .article__side {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    // margin: 1rem;
-    width: 100%;
-  
-    &__button {
-      width: 80%;
-      padding: 12px 24px;
-      border-right: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-      border-left: 1px solid #ccc;
-      border-top: none;
-      // margin: 1rem;
-      font-size: 1rem;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      background-color: #ffffff;
-      color: black;
-      // border-radius: .5rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  
-      &--active {
-        border-bottom: none;
-        border-right: none;
-        border-left: none;
-        margin: none;
-        height: 40px;
-      }
-    }
-   
-    .image__div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .alert-icon {
-      width: 30px;
-    }
-  
-    .alert__button {
-      padding: 0.3rem;
-    }
-    // .alert__div {
-    //   display: flex;
-    //   flex-direction: row;
-    //   height: 40px;
-    // }
-  }
+}
+

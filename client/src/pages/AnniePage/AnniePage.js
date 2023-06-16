@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import profilesData from "../../data/profiles.json";
 import "./AnniePage.scss";
 import chartImage from "../../assets/images/graph@3x.png";
+import alertIcon from "../../assets/icons/red-alert.svg"
 
 
 const AnniePage = () => {
@@ -33,6 +34,7 @@ const AnniePage = () => {
             className="article__side__button article__side__button--active"
             onClick={handleClick1}
           >
+            <img className="alert-icon" src={alertIcon} />
             Annie
           </button>
           <button

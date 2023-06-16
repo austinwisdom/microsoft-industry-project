@@ -1,16 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import profilesData from "../../data/profiles.json";
 import "./ProfilesPage.scss";
 import chartImage from "../../assets/images/graph@3x.png";
+import profilePic from "../../assets/Ellipse 3.png"
+import alertIcon from "../../assets/icons/red-alert.svg"
 
 const ProfilesPage = () => {
   const navigate = useNavigate();
   const handleClick1 = () => {
-    navigate("/jorge");
+    navigate("/profiles/annie");
   };
   const handleClick2 = () => {
-    navigate("/annie");
+    navigate();
   };
   const handleClick3 = () => {
     navigate("/david");
@@ -29,9 +32,10 @@ const ProfilesPage = () => {
           Me
         </button>
         <button
-          className="article__side__button"
+          className="article__side__button alert__button"
           onClick={handleClick1}
         >
+          <img className="alert-icon" src={alertIcon} />
           Annie
         </button>
         <button
@@ -54,7 +58,7 @@ const ProfilesPage = () => {
         </button>
       </article>
       <article className="article__main">
-        <img className="article__main__image" src={profilesData[0].image} />
+        <img className="article__main__image" src={profilePic} />
         <p className="article__main__name">Welcome back Jorge! Here are some details about how your data is being used.</p>
         <div className="article__main__info">
           {/* <p className="article__main__info__location">{profilesData[0].location}</p> */}

@@ -12,15 +12,44 @@
   height: auto;
 }
 
-.article__main {
-
+.annie-page__article__main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  width: 60rem;
+  height: 60rem;
+  background-color: #fff;
+  // margin-top: 2rem;
+  margin-left: 5rem;
+  &__name {
+    width: 10vw;
+    height: auto;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: .5rem;
+    color:#213555;
+    font-weight: 600;
+  }
+  &__image {
+    width: 10vw;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 18rem .5rem 1rem .5rem;
+    
+  }
   &__map {
     display: flex;
-    justify-content: center;
+    
     width:42%;
     height: 15rem;
     border: 1px solid #213555;
     border-radius: 5px;
+    margin-top: 18rem;
     margin-left: .3rem;
     &__detail {
       display: flex;

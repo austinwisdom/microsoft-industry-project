@@ -22,7 +22,7 @@ const AnniePage = () => {
   };
 
   return (
-    <div className="profiles-page">
+    <div className="annie-page">
       <article className="article__side">
         <button className="article__side__button" onClick={handleClick4}>
           Me
@@ -44,21 +44,21 @@ const AnniePage = () => {
           Brian
         </button>
       </article>
-      <article className="article__main">
-        <img className="article__main__image" src={profilesData[1].image} />
-        <p className="article__main__name">
+      <article className="annie-page__article__main">
+        <img className="annie-page__article__main__image" src={profilesData[1].image} />
+        <p className="annie-page__article__main__name">
           Welcome back Annie! Here are some details about how your data is being
           used.
         </p>
-        <img className="article__main__map" src={mapIcon} />
-        <p className="article__main__map__detail">
+        <img className="annie-page__article__main__map" src={mapIcon} />
+        <p className="annie-page__article__main__map__detail">
           Untrusted traffic suspected!
           <img className="alert-icon" src={alertIcon} />
         </p>
         <div className="article__main__chart">
-          <img src={chartImage} className="article__main__chart__image" />
+          {/* <img src={chartImage} className="article__main__chart__image" />
           <h3 className="article__main__chart__title">Chart Title</h3>
-          <p className="article__main__chart__detail">Chart Details</p>
+          <p className="article__main__chart__detail">Chart Details</p> */}
         </div>
       </article>
     </div>

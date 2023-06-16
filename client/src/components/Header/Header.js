@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import "./Header.scss"
 
 const Header = () => {
@@ -11,11 +13,11 @@ const Header = () => {
                 <div className="nav__div--navbar">
                     <h4 className="">Your Information</h4>
                     <ul className="nav__ul">
-                        <li>Privacy</li>
-                        <li>Security</li>
-                        <li>Payment and Billing</li>
-                        <li>Services and Subscriptions</li>
-                        <li>Devices</li>
+                        <NavLink><li>Privacy</li></NavLink>
+                        <NavLink><li>Security</li></NavLink>
+                        <NavLink><li>Payment and Billing</li></NavLink>
+                        <NavLink><li>Services and Subscriptions</li></NavLink>
+                        <NavLink><li>Devices</li></NavLink>
                     </ul>
                 </div>
             </nav>

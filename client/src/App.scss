@@ -1,3 +1,9 @@
+@use "./styles/partials/fonts" as *;
+
+body {
+  font-family: 'Sergoe-UI';
+}
+
 .App {
   text-align: center;
 }

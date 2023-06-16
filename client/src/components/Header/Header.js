@@ -1,3 +1,4 @@
+
 import { NavLink } from "react-router-dom";
 
 import questionIcon from "../../assets/icons/question-mark.svg"
@@ -8,12 +9,13 @@ const Header = () => {
     return (
         <div>
             <nav className="nav">
-                <div className="nav__div--logo">
+                <div className="nav__div--main">
+                    <div className="nav__div--logo">
                     <img src="" />
-                    <NavLink><h3>Microsoft Account |</h3></NavLink>
+                    <NavLink><h3 className="nav__div--link">Microsoft Account |</h3></NavLink>
+                    <NavLink><h4>Your Information</h4></NavLink>
                 </div>
                 <div className="nav__div--navbar">
-                    <NavLink><h4 className="">Your Information</h4></NavLink>
                     <ul className="nav__ul">
                         <NavLink><li>Privacy</li></NavLink>
                         <NavLink><li>Security</li></NavLink>
@@ -22,8 +24,9 @@ const Header = () => {
                         <NavLink><li>Devices</li></NavLink>
                     </ul>
                 </div>
+                </div>
                 <div>
-                    <img src={questionIcon} />
+                    <img className="nav__icon" src={questionIcon} />
                 </div>
             </nav>
         </div>

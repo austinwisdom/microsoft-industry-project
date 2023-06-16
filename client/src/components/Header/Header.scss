@@ -4,6 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 4rem;
 
     background-color: #1D71C6;
   
@@ -22,6 +23,7 @@
             width: 300px;
             display: flex;
             flex-direction: row;
+            align-items: center;
             margin-left: 1rem;
   
             & > * {

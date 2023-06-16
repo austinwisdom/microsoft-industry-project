@@ -43,8 +43,13 @@
             list-style-type: none;
             margin-left: 2rem;
             font-size: .85rem;
-            width: 100%;
+            
             color: #F2F2F2;
+            padding: .5rem;
+
+            &:hover {
+                border-bottom: 1px solid white;
+            }
         }
     }
 }

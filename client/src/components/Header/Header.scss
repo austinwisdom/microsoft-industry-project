@@ -2,13 +2,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #1D71C6;
 
     &__div {
 
+        &--link {
+            margin-right: 1rem;
+        }
+
+        &--main {
+            display: flex;
+            flex-direction: row;
+        }
+
         &--logo {
-            width: 200px;
+            width: 300px;
             display: flex;
             flex-direction: row;
             margin-left: 1rem;
@@ -54,5 +63,9 @@
                 border-bottom: 1px solid white;
             }
         }
+    }
+
+    &__icon {
+        margin-right: 1rem;
     }
 }

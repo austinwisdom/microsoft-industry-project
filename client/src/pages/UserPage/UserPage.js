@@ -1,4 +1,5 @@
 import "./UserPage.scss";
+import CompleteName from "../../components/Articles/CompleteName/CompleteName";
 // import AccountInformation from "../components/Articles/AccountInformation/AccountInformation";
 // import CompleteName from "../components/Articles/CompleteName/CompleteName";
 // import DataServices from "../components/Articles/DataServices/DataServices";
@@ -8,14 +9,14 @@ import "./UserPage.scss";
 
 const UserPage = () => {
   return (
-  <>
-    {/* <AccountInformation />
+  <div className="user-page">
+    {/* <AccountInformation /> */}
     <CompleteName />
-    <DataServices />
+    {/* <DataServices />
     <LanguageInformation />
     <ProfileInformation />
     <YourProfiles /> */}
-  </>
+    </div>
   )
 }
 

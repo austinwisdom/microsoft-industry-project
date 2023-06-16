@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/"  />
           <Route path="/user" element={<UserPage />} />
           <Route path="/profiles" element={<ProfilesPage />} />
         </Routes>

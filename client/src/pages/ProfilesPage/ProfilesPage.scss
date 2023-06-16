@@ -32,7 +32,7 @@
     width: 10vw;
     height: auto;
     border: 1px solid #ccc;
-    border-radius: .5rem;
+    border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: .5rem;
   }
@@ -113,4 +113,17 @@
     align-items: center;
     justify-content: center;
   }
+
+  .alert-icon {
+    width: 30px;
+  }
+
+  .alert__button {
+    padding: 0.3rem;
+  }
+  // .alert__div {
+  //   display: flex;
+  //   flex-direction: row;
+  //   height: 40px;
+  // }
 }

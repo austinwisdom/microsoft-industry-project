@@ -17,8 +17,8 @@ const CompleteName = () => {
       </div>
       <div className="complete-name__bottom">
         <p>Complete Name</p>
-        <p>Andrew Roberts</p>
-        <p>Edit Name</p>
+        <p className="complete-name__bottom--name">Andrew Roberts</p>
+        <p className="complete-name__bottom--edit">Edit Name</p>
       </div>
     </section>
   )

@@ -8,7 +8,7 @@ const DataServices = () => {
   <section className="data-services">
     <div className="data-services__head">
       <p>Data Services</p>
-      <Link className="data-services__link"  to={"/"} >
+      <Link className="data-services__link"  to={"/profiles"} >
       <p className="data-services__link">Data Preferences</p>
       </Link>
     </div>

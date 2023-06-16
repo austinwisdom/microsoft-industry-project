@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 80%;
   height: 70%;
-  margin: 10%;
+  margin-right: 10%;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -14,10 +14,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 60rem;
-  height: 20rem;
+  height: 60rem;
   background-color: #fff;
-  margin: 5rem 2rem;
-  column-width:max(1rem);
+  // margin-top: 2rem;
+  margin-left: 5rem;
   &__name {
     width: 10vw;
     height: auto;
@@ -64,8 +64,8 @@
     color:#213555;
     font-weight: 600;
     &__image {
-      height: 10rem;
-      width: 10rem;
+      height: 35rem;
+      width: 35rem;
     }
     &__title {
       height: 2rem;
@@ -118,9 +118,10 @@
   .alert__button {
     padding: 0.3rem;
   }
-  // .alert__div {
-  //   display: flex;
-  //   flex-direction: row;
-  //   height: 40px;
-  // }
+}
+
+.low {
+  color: green;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }

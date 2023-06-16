@@ -9,7 +9,7 @@ import mapIcon from "../../assets/icons/Map.png";
 const AnniePage = () => {
   const navigate = useNavigate();
   const handleClick1 = () => {
-    navigate("/jorge");
+    navigate("");
   };
   const handleClick2 = () => {
     navigate("/annie");
@@ -18,7 +18,7 @@ const AnniePage = () => {
     navigate("/david");
   };
   const handleClick4 = () => {
-    navigate("/angela");
+    navigate("/profiles");
   };
 
   return (

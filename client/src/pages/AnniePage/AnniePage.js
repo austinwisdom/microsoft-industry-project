@@ -4,6 +4,7 @@ import profilesData from "../../data/profiles.json";
 import "./AnniePage.scss";
 import chartImage from "../../assets/images/graph@3x.png";
 import alertIcon from "../../assets/icons/red-alert.svg"
+import map from "../../assets/Map.png"
 
 
 const AnniePage = () => {
@@ -68,9 +69,9 @@ const AnniePage = () => {
             </p>
           </div>
           <div className="article__main__chart">
-            <img src={chartImage} className="article__main__chart__image"/>
-            <h3 className="article__main__chart__title">Chart Title</h3>
-            <p className="article__main__chart__detail">Chart Details</p>
+            <img src={map} className="article__main__chart__image"/>
+            <h3 className="article__main__chart__title">Unusual activity detected</h3>
+            <p className="article__main__chart__detail">Imediate action recommended</p>
           </div>
   
         </article>

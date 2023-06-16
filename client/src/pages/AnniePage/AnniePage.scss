@@ -1,0 +1,41 @@
+.article__side__button--active {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.alert-icon {
+  margin-left: 1rem;
+  width: 2rem;
+  height: auto;
+}
+
+.article__main {
+
+  &__map {
+    display: flex;
+    justify-content: center;
+    width:42%;
+    height: 15rem;
+    border: 1px solid #213555;
+    border-radius: 5px;
+    margin-left: .3rem;
+    &__detail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+      height: auto;
+      padding: .5rem;
+      border: 1px solid #ccc;
+      border-radius: .5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: .5rem;
+      color:#213555;
+      font-weight: 600;
+    }
+  }
+}
+

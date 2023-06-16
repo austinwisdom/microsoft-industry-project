@@ -7,6 +7,8 @@ import Footer from "./components/Footer/Footer";
 import MainPage from "./pages/MainPage/MainPage";
 import UserPage from "./pages/UserPage/UserPage";
 import ProfilesPage from "./pages/ProfilesPage/ProfilesPage";
+import JorgePage from "./pages/JorgePage/JorgePage";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           <Route path="/"  />
           <Route path="/user" element={<UserPage />} />
           <Route path="/profiles" element={<ProfilesPage />} />
+          <Route path="/profiles/jorge" element={<JorgePage />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

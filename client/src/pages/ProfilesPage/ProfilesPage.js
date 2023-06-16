@@ -7,28 +7,60 @@ import chartImage from "../../assets/images/graph@3x.png";
 const ProfilesPage = () => {
   const navigate = useNavigate();
   const handleClick1 = () => {
-    navigate("/Austin");
+    navigate("/jorge");
   };
   const handleClick2 = () => {
-    navigate("/Alina");
+    navigate("/annie");
   };
   const handleClick3 = () => {
-    navigate("/Ali");
+    navigate("/david");
   };
   const handleClick4 = () => {
-    navigate("/Zander");
+    navigate("/angela");
   };
 
   return (
     <div className="profiles-page">
+      <article className="article__side">
+      <button
+          className="article__side__button article__side__button--active"
+          onClick={handleClick4}
+        >
+          Me
+        </button>
+        <button
+          className="article__side__button"
+          onClick={handleClick1}
+        >
+          Annie
+        </button>
+        <button
+          className="article__side__button"
+          onClick={handleClick2}
+        >
+          David
+        </button>
+        <button
+          className="article__side__button"
+          onClick={handleClick3}
+        >
+          Angela
+        </button>
+        <button
+          className="article__side__button"
+          onClick={handleClick4}
+        >
+          Brian
+        </button>
+      </article>
       <article className="article__main">
-        <p className="article__main__name">{profilesData[0].name}</p>
+        <p className="article__main__name">Jorge</p>
         <img className="article__main__image" src={profilesData[0].image} />
         <div className="article__main__info">
           <p className="article__main__info__location">{profilesData[0].location}</p>
-          <p className="article__main__info__age">{profilesData[0].age}</p>
+          {/* <p className="article__main__info__age">{profilesData[0].age}</p> */}
           <p className="article__main__info__occupation">
-            {profilesData[0].occupation}
+            {/* {profilesData[0].occupation} */}
           </p>
         </div>
         <div className="article__main__chart">
@@ -37,32 +69,6 @@ const ProfilesPage = () => {
           <p className="article__main__chart__detail">Chart Details</p>
         </div>
 
-      </article>
-      <article className="article__side">
-        <button
-          className="article__side__button article__side__button__1"
-          onClick={handleClick1}
-        >
-          {profilesData[0].name}
-        </button>
-        <button
-          className="article__side__button article__side__button__1"
-          onClick={handleClick2}
-        >
-          {profilesData[1].name}
-        </button>
-        <button
-          className="article__side__button article__side__button__1"
-          onClick={handleClick3}
-        >
-          {profilesData[2].name}
-        </button>
-        <button
-          className="article__side__button article__side__button__1"
-          onClick={handleClick4}
-        >
-          {profilesData[3].name}
-        </button>
       </article>
     </div>
   );

@@ -1,7 +1,12 @@
 .profiles-page {
   display: flex;
-  width: 100vw;
-  font-family: 'Titillium Web';
+  flex-direction: column;
+  width: 80%;
+  height: 70%;
+  margin: 10%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .article__main {
@@ -11,9 +16,6 @@
   width: 60rem;
   height: 20rem;
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: .5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 5rem 2rem;
   &__name {
     width: 10vw;
@@ -75,29 +77,34 @@
 }
 .article__side {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 5rem 2rem;
-  width: 30rem;
+  // margin: 1rem;
+  width: 100%;
+
   &__button {
     width: 80%;
     padding: 12px 24px;
-    margin: 1rem;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-top: none;
+    // margin: 1rem;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    background-color: #213555;
-    color: #ffffff;
-    border: none;
-    border-radius: .5rem;
+    background-color: #ffffff;
+    color: black;
+    // border-radius: .5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
+    &--active {
+      border-bottom: none;
+    }
   }
  
 }

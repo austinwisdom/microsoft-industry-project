@@ -54,10 +54,10 @@ const ProfilesPage = () => {
         </button>
       </article>
       <article className="article__main">
-        <p className="article__main__name">Jorge</p>
         <img className="article__main__image" src={profilesData[0].image} />
+        <p className="article__main__name">Welcome back Jorge! Here are some details about how your data is being used.</p>
         <div className="article__main__info">
-          <p className="article__main__info__location">{profilesData[0].location}</p>
+          {/* <p className="article__main__info__location">{profilesData[0].location}</p> */}
           {/* <p className="article__main__info__age">{profilesData[0].age}</p> */}
           <p className="article__main__info__occupation">
             {/* {profilesData[0].occupation} */}

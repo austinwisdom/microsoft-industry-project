@@ -15,10 +15,16 @@
     border-bottom: 1px solid rgb(212, 211, 211);
 }
 &__link{
-    list-style: none;
+ text-decoration: none;  
+ color: rgba(65, 141, 209, 1); 
 }
 &__graph{
     margin-left: 20%;
+}
+&__note{
+
+padding: 2rem 1rem;
+    text-align: left;
 }
 &__main{
     display: flex;

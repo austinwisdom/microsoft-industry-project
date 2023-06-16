@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import profilesData from "../../data/profiles.json";
 import "./JorgePage.scss";
 import chartImage from "../../assets/images/graph@3x.png";
@@ -38,6 +38,7 @@ const JorgePage = () => {
         </div>
 
       </article>
+      <Link to={"/user"} className="user__details">user details</Link>
       <article className="article__side">
         <button
           className="article__side__button article__side__button__1"

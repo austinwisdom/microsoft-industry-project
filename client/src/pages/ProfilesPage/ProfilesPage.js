@@ -58,6 +58,7 @@ const ProfilesPage = () => {
           Brian
         </button>
       </article>
+      <Link to={"/user"} className="user__details">user details</Link>
       <article className="article__main">
         <img className="article__main__image" src={profilePic} />
         <p className="article__main__name">Welcome back Andrew! Here are some details about how your data is being used.</p>

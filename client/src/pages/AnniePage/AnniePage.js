@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import profilesData from "../../data/profiles.json";
 import "./AnniePage.scss";
 import chartImage from "../../assets/images/graph@3x.png";
@@ -56,6 +56,7 @@ const AnniePage = () => {
             Brian
           </button>
         </article>
+        <Link to={"/user"} className="user__details">user details</Link>
         <article className="article__main">
           <img className="article__main__image" src={profilesData[1].image} />
           <p className="article__main__name">Here are some details about how Annie's data is being used.</p>

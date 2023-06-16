@@ -1,11 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import MainPage from "./pages/MainPage/MainPage";
 import UserPage from "./pages/UserPage/UserPage";
+import ProfilesPage from "./pages/ProfilesPage/ProfilesPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/user" element={<UserPage />} />
+          <Route path="/profiles" element={<ProfilesPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
